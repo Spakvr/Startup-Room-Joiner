@@ -25,7 +25,7 @@ namespace StartupRoomJoiner
 
 		void OnGameInitialized(object sender, EventArgs e)
 		{
-            PhotonNetworkController.Instance.AttemptToJoinSpecificRoom(codetoJoin, JoinType.Solo);
+            PhotonNetworkController.Instance.AttemptToJoinSpecificRoom(codetoJoin.ToUpper(), JoinType.Solo);
         }
 	}
 }
